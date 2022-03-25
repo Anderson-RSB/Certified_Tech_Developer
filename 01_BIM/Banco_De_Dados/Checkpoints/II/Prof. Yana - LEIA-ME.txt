@@ -1,0 +1,30 @@
+Olá Professora Yana!
+Tudo bom?!
+
+Espero que esteja bem...
+
+Fiz esse bloco de notas apenas para lhe descrever os aquivos que você encontrará neste .zip
+
+E para dizer que, por questões de organização, decidi fazer um Schema/Script apenas com a criação do Banco de Dados e, outro só apenas com os comandos CRUD!
+
+
+Segue descrição:
+
+Checkpoint I - BD.drawio.pdf = É o meu BD construído no Drawio para o primeiro Checkpoint.
+O mesmo ainda se encontra com os erros, para que você consiga ver mais facilmente a diferença entre como ele estava e, como ele ficou após a correção.
+
+Checkpoint I - BD - (CORRIGIDO).drawio.pdf = Como o próprio nome diz, são as correções que eu realizei de acordo com o seu Feedback avaliativo sobre o mesmo.
+
+DataBase_GameStore.sql = É o Schema/Script de criação do meu BD, no Workbench.
+
+DataBase_GameStore.txt = Apenas um CTRL+C / CTRL+V dos comandos que utilizei para a criação do BD no Workbench, como foi solicitado no .docx do Checkpoint II
+
+CRUD_GameStore.sql = É o Schema/Script com os comandos CRUD que utilizei no meu BD, no Workbench
+
+CRUD_GameStore.txt = Apenas um CTRL+C / CTRL+V dos comandos que utilizei para realizar os comandos CRUD do BD no Workbench, como foi solicitado no .docx do Checkpoint II
+
+
+Se você leu até aqui, fico grato pela atenção e, lhe desejo um bom dia/final de semana/inicio de semana!!
+
+Atenciosamente,
+Anderson Ribeiro Sena Borges
