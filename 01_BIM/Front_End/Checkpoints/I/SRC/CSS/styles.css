@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=Roboto+Condensed&family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=Roboto:wght@100;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+}
+
+body {
+    height: auto;
+    width: 100vw;
+    background: rgb(255, 175, 0);
+    background: linear-gradient(0deg, rgba(255, 175, 0, 1) 10%, rgba(247, 146, 38, 1) 40%, rgba(255, 56, 30, 1) 90%);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    min-height: 130px;
+    width: 100vw;
+    background-color: darkorange;
+    background: rgba(255, 255, 255, 0.1);
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: none;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.logo img {
+    height: 120px;
+    width: 120px;
+}
+
+.titulo {
+    border: none;
+    box-sizing: border-box;
+    border-radius: 44px;
+    padding: 16px;
+    background: rgb(247, 146, 38);
+}
+
+.navMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+
+.butt {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 44px;
+    padding: 16px;
+    background: rgb(247, 146, 38);
+}
+
+.butt:hover {
+    transform: scale(1.25, 1.25);
+}
+
+.navMenu a {
+    font-size: 24px;
+    color: black;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-height: 532px;
+    min-height: 532px;
+    width: 100vw;
+    background-image: url("../IMG/iLoveCampinas.jpeg");    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -540px;
+}
+
+.sectionPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 44px;
+}
+
+.sectionPrincipal h1 {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    text-align: center;
+    color: black;
+    margin-bottom: 32px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 534px;
+    width: 100vw;
+}
+
+.card1,
+.card2,
+.card3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 534px;
+    width: 335px;
+    border-radius: 1em;
+    /* box-shadow: 0 0 5em -1em black;
+    transition: all, 2.0s; */
+    border: 3px solid black;
+}
+
+.card1 {
+    background-image:url("https://www.campinas.sp.gov.br/uploads/fotos/fe22b85d21bceebd9207ad22e3ce4a28.jpg");
+    background-position-x: -125px;
+    background-repeat: no-repeat;    
+    background-size: 500px 534px;
+}
+
+.card2 {
+    background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/65/bb/8e/pedreira-do-chapadao.jpg?w=500&h=-1&s=1");
+    background-position: center;
+    background-repeat: no-repeat;    
+    background-size: 500px 534px;
+}
+
+.card3 {
+    background-image: url("https://4.bp.blogspot.com/-EhG3FBd8O0k/W-dEnBHmg-I/AAAAAAAALU0/KCCWwZ2CmK8DTDL5LDpZ9Gjd2XEzS3D2QCLcBGAs/s1600/BOSQUE%2B2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;    
+    background-size: 500px 534px;
+}
+
+.cards p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    background: rgb(247, 146, 38);
+    border: 1px solid black;
+    border-radius: 16px;
+    height: 80px;
+    width: 175px;
+    padding: 2px;
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: black;
+}
+
+.cards p:hover {
+    transform: scale(1.25, 1.25);
+}
+
+.sectioCuriosidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.curiosidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    padding: 16px;
+    gap: 16px;
+}
+
+.curiosidades h1{
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    text-align: center;
+    color: black;
+}
+
+.curiosidades strong {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    color: black;
+}
+
+.curiosidades p {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.sectionVideo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 28px;
+}
+
+.sectionVideo h1 {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    text-align: center;
+    color: black;
+    margin-bottom: 32px;
+}
+
+.video1 iframe {
+    height: 534px;
+    width: 1034px;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 414px;
+    margin-top: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: none;
+}
+
+.rodape h1 {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    text-align: center;
+    color: black;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.linkdIn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.linkdIn img {
+    height: 140px;
+    width: 140px;
+}
+
+.linkdIn a {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    text-align: center;
+    color: black;
+}
+
+.gitHub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+
+.gitHub img {
+    height: 140px;
+    width: 140px;
+}
+
+.gitHub a {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    text-align: center;
+    color: black;
+}
+
+
+
+@media (max-width: 425px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .video1 iframe {
+        width: 340px;
+        height: auto;
+    }
+}
