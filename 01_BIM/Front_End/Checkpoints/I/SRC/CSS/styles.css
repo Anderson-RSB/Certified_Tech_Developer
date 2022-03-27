@@ -203,6 +203,8 @@ body {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    text-align: justify;
+    text-indent: 20px;
 }
 
 .curiosidades {
@@ -353,6 +355,42 @@ body {
 }
 
 /* Configurações de @Media */
+@media (max-width: 1280px) { 
+    body {
+        height: auto;
+        width: 100vw;
+    }
+
+    .cabecalho {
+        width: 100vw;
+    }
+
+    .banner {
+        width: 100vw;
+    }
+
+    .cards {
+        width: 85vw;
+    }
+
+    .sectionCuriosidades {
+        width: 85vw;
+    }
+
+    .sectionVideo {
+        width: 90vw;
+    }
+
+    .video1 iframe {
+        width: 980px;
+    }
+
+    .rodape {
+        width: 100vw;
+    }
+
+}
+
 @media (max-width: 430px) {
     body {
         height: auto;
@@ -412,4 +450,13 @@ body {
         height: 200px;
     }
 
+    .linkdIn img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .gitHub img{
+        height: 100px;
+        width: 100px;
+    }
 }
