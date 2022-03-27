@@ -1,6 +1,8 @@
+/* Import das fontes Roboto Condensed e Oswald pelo Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=Roboto+Condensed&family=Roboto:wght@100;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=Roboto:wght@100;300;400&display=swap');
 
+/* Resetador da página */
 * {
     margin: 0;
     padding: 0;
@@ -12,13 +14,15 @@
     font-size: 64px;
 }
 
+/* Configurações e Gradient para o body */
 body {
     height: auto;
-    width: 100vw;
+    width: 100vw;   
     background: rgb(255, 175, 0);
     background: linear-gradient(0deg, rgba(255, 175, 0, 1) 10%, rgba(247, 146, 38, 1) 40%, rgba(255, 56, 30, 1) 90%);
 }
 
+/* Configurações de cabeçalho */
 .cabecalho {
     display: flex;
     flex-direction: row;
@@ -28,7 +32,7 @@ body {
     width: 100vw;
     background-color: darkorange;
     background: rgba(255, 255, 255, 0.1);
-    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: none;
@@ -85,6 +89,7 @@ body {
     color: black;
 }
 
+/* Configurações da seção do Banner */
 .principal {
     display: flex;
     flex-direction: column;
@@ -106,6 +111,7 @@ body {
     background-position-y: -540px;
 }
 
+/* Configuração da Seção dos Cards */
 .sectionPrincipal {
     display: flex;
     flex-direction: column;
@@ -129,7 +135,7 @@ body {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    height: 534px;
+    min-height: 534px;
     width: 100vw;
 }
 
@@ -137,13 +143,12 @@ body {
 .card2,
 .card3 {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     height: 534px;
     width: 335px;
     border-radius: 1em;
-    /* box-shadow: 0 0 5em -1em black;
-    transition: all, 2.0s; */
     border: 3px solid black;
 }
 
@@ -192,10 +197,11 @@ body {
     transform: scale(1.25, 1.25);
 }
 
-.sectioCuriosidades {
+/* Configurações da Seção de curiosidades */
+.sectionCuriosidades {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -218,7 +224,15 @@ body {
     color: black;
 }
 
+.curiosidade1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 .curiosidades strong {
+    display: flex;
+    flex-wrap: wrap;
     font-family: 'Oswald', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -228,12 +242,16 @@ body {
 }
 
 .curiosidades p {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     font-family: 'Oswald', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
 }
 
+/* Configurações da Seção Video */
 .sectionVideo {
     display: flex;
     flex-direction: column;
@@ -253,7 +271,7 @@ body {
 }
 
 .video1 iframe {
-    height: 534px;
+    height: 580px;
     width: 1034px;
 }
 
@@ -265,12 +283,13 @@ body {
     min-height: 414px;
     margin-top: 44px;
     background: rgba(255, 255, 255, 0.1);
-    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: none;
 }
 
+/* Configurações do Rodapé */
 .rodape h1 {
     font-family: 'Oswald', sans-serif;
     font-style: normal;
@@ -333,17 +352,64 @@ body {
     color: black;
 }
 
-
-
-@media (max-width: 425px) {
+/* Configurações de @Media */
+@media (max-width: 430px) {
     body {
+        height: auto;
+        width: 100vw;
+        margin: 0;
         display: flex;
         flex-direction: column;
-        height: auto;
+        flex-wrap: wrap;
+    }
+    
+    .cabecalho {
+        padding: 0;
+        gap: 4px;
+    }
+
+    .logo{
+        padding: 0;
+        gap: 0;
+    }
+
+    .navMenu {
+        gap: 4px;
+    }
+
+    .banner {
+        max-height: 0;
+        min-height: 0;
+    }
+
+    .sectionPrincipal h1 {
+        width: 85vw;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 95vw;
+        gap: 4px;
+    }
+
+    .sectionCuriosidades {
+        width: 90vw;
+    }
+
+    .curiosidades {
+        width: 90vw;
+    }
+
+    .sectionVideo {
+        width: 85vw;
     }
 
     .video1 iframe {
         width: 340px;
-        height: auto;
+        height: 200px;
     }
+
 }
